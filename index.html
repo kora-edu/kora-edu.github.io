@@ -3,325 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Startup Name</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <title>Kora-Edu: AI-Powered Question Generation and Feedback</title>
+    <meta name="description" content="Kora-Edu is an innovative educational technology project developing AI systems for generating questions and providing intelligent feedback to enhance learning.">
+    <link rel="canonical" href="https://kora-edu.github.io//">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://kora-edu.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kora-Edu: AI-Powered Question Generation and Feedback">
+    <meta property="og:description" content="Kora-Edu is an innovative educational technology project developing AI systems for generating questions and providing intelligent feedback to enhance learning.">
+
+   
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@kora_edu">
+    <meta property="twitter:domain" content="kora-edu.github.io/">
+    <meta property="twitter:url" content="https://kora-edu.github.io/">
+    <meta name="twitter:title" content="Kora-Edu: AI-Powered Question Generation and Feedback">
+    <meta name="twitter:description" content="Kora-Edu is an innovative educational technology project developing AI systems for generating questions and providing intelligent feedback to enhance learning.">
+
     <style>
-        /* Custom Styles */
-
-        /* Ensure sections have enough padding */
-        section {
-            padding: 60px 0;
+        body {
+            line-height: 1.6;
+            font-size: 16px;
+            padding: 0 10px;
+            margin: 50px auto;
+            max-width: 650px;
+            font-family: Arial, sans-serif;
+            color: #333;
         }
-
-        /* Hero Section Styles */
-        .hero {
-            background: url('https://source.unsplash.com/1600x900/?education,technology') no-repeat center center;
-            background-size: cover;
-            color: white;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            position: relative;
+        #maincontent {
+            max-width: 42em;
+            margin: 15px auto;
         }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+        h1, h2 {
+            color: #2c3e50;
         }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
+        a {
+            color: #3498db;
+            text-decoration: none;
         }
-
-        /* Feature Icons */
-        .feature-icon {
-            font-size: 3rem;
-            color: #0d6efd;
-            margin-bottom: 20px;
-        }
-
-        /* Footer Styles */
-        footer {
-            background-color: #f8f9fa;
-            padding: 20px 0;
-        }
-
-        /* Hover Effects for Buttons */
-        .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #0056b3;
-        }
-
-        /* Contact Form Styles */
-        .contact-form input,
-        .contact-form textarea {
-            border-radius: 0;
-        }
-
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .feature-icon {
-                font-size: 2.5rem;
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="#">Your Startup</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div  class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#problem">The Problem</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#solution">Our Solution</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#why">Why Choose Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#join">Join Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <div id="maincontent">
+        <h1>Kora-Edu</h1>
+        <div style="margin-bottom:30px;">
+            <i>Update: We're an unfunded project actively seeking our first round of investment to accelerate our mission.</i>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero d-flex">
-        <div class="container text-center hero-content">
-            <h1 class="display-4">Revolutionizing Education with AI-Powered Q&A Systems</h1>
-            <p class="lead">Empowering learners and educators with intelligent question and answer systems.</p>
-            <a href="#join" class="btn btn-primary btn-lg mx-2">Join Our Mailing List</a>
-            <a href="#about" class="btn btn-secondary btn-lg mx-2">Learn More</a>
-        </div>
-    </section>
-
-    <!-- About Us -->
-    <section id="about" class="bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">About Us</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Who We Are</h3>
-                    <p>At Your Startup Name, we're passionate about leveraging cutting-edge AI technology to make education more interactive, engaging, and effective. Our team comprises educators, AI specialists, and software developers dedicated to creating tools that address the unique challenges in today's educational landscape.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Our Mission</h3>
-                    <p>To empower learners and educators with intelligent question and answer systems that foster deeper understanding, critical thinking, and academic success.</p>
-                    <h3>Our Vision</h3>
-                    <p>A world where every student has access to personalized, responsive educational tools that cater to their individual learning needs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- The Problem -->
-    <section id="problem">
-        <div class="container">
-            <h2 class="text-center mb-4">Challenges in Modern Education</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <h4>One-Size-Fits-All Learning</h4>
-                    <p>Traditional teaching methods often fail to address the diverse learning paces and styles of students.</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Engagement Gaps</h4>
-                    <p>Keeping students engaged and motivated remains a significant hurdle in the classroom.</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Resource Intensive</h4>
-                    <p>Creating and managing effective Q&A resources demands substantial time and effort from educators.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Solution -->
-    <section id="solution" class="bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">AI-Generated Q&A Systems</h2>
-            <p class="text-center">Your Startup Name is developing an innovative AI-driven platform that generates customized questions and answers tailored to each learner's needs. Our system will:</p>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <h5>Personalize Learning</h5>
-                    <p>Adapt to individual student levels, providing questions that challenge and support their growth.</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Enhance Engagement</h5>
-                    <p>Utilize interactive AI to keep students motivated and interested in their studies.</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Support Educators</h5>
-                    <p>Automate the creation of Q&A materials, allowing teachers to focus more on instruction and less on preparation.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features -->
-    <section id="features">
-        <div class="container">
-            <h2 class="text-center mb-4">Upcoming Features</h2>
-            <div class="row">
-                <div class="col-md-3 text-center">
-                    <i class="bi bi-gear feature-icon"></i>
-                    <h5>Adaptive Learning Algorithms</h5>
-                    <p>AI that adjusts question difficulty in real-time based on student performance.</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <i class="bi bi-bar-chart feature-icon"></i>
-                    <h5>Comprehensive Analytics</h5>
-                    <p>Detailed insights into student progress and areas needing improvement.</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <i class="bi bi-image feature-icon"></i>
-                    <h5>Multimedia Integration</h5>
-                    <p>Incorporate images, videos, and interactive elements into Q&A content.</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <i class="bi bi-people feature-icon"></i>
-                    <h5>Collaborative Tools</h5>
-                    <p>Enable teachers and students to interact within the platform seamlessly.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section id="why" class="bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Why Choose Us</h2>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <h5>Innovative Technology</h5>
-                    <p>We utilize the latest advancements in AI to create responsive and intelligent educational tools.</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <h5>User-Centric Design</h5>
-                    <p>Our platform is designed with both educators and students in mind, ensuring ease of use and maximum impact.</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <h5>Commitment to Excellence</h5>
-                    <p>Dedicated to continuous improvement and staying ahead of educational trends to provide the best possible solutions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Join Us -->
-    <section id="join">
-        <div class="container">
-            <h2 class="text-center mb-4">Be Part of the Educational Revolution</h2>
-            <p class="text-center mb-4">We're on a journey to redefine education with AI. Stay updated on our progress, provide feedback, and be the first to know when our product launches.</p>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <form id="signup-form">
-                        <div class="mb-3">
-                            <label for="signupEmail" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="signupEmail" placeholder="name@example.com" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Sign Up for Updates</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Us -->
-    <section id="contact" class="bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Get in Touch</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Contact Information</h5>
-                    <p><strong>Email:</strong> discord :kahu0 </a></p>
-                </div>
-                <div class="col-md-6">
-                    <form id="contact-form">
-                        <div class="mb-3">
-                            <label for="contactName" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="contactName" placeholder="Your Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="contactEmail" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="contactMessage" class="form-label">Message</label>
-                            <textarea class="form-control" id="contactMessage" rows="4" placeholder="Your message..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section (Optional) -->
-    <section id="blog">
-        <div class="container">
-            <h2 class="text-center mb-4">Insights & Updates</h2>
-            <p class="text-center mb-4">Stay informed with the latest trends in educational technology, AI advancements, and updates from our team.</p>
-            <!-- Future Blog Content Here -->
-            <p class="text-center">Coming Soon!</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>&copy; 2024 Kora All rights reserved.</p>
-            <p>
-                <a href="#">Privacy Policy</a> | 
-                <a href="#">Terms of Service</a> | 
-                <a href="#">Careers</a>
-            </p>
-            <div>
-                <a href="#" class="me-2 text-dark"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="me-2 text-dark"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="me-2 text-dark"><i class="bi bi-linkedin"></i></a>
-                <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS and dependencies (Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS (Optional) -->
-    <script>
-        // Example: Handle form submissions (Replace with actual backend integration)
-
-        document.getElementById('signup-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = document.getElementById('signupEmail').value;
-            alert('Thank you for signing up, ' + email + '!');
-            this.reset();
-        });
-
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('contactName').value;
-            const email = document.getElementById('contactEmail').value;
-            const message = document.getElementById('contactMessage').value;
-            alert('Thank you for contacting us, ' + name + '! We will get back to you shortly.');
-            this.reset();
-        });
-    </script>
+        <h2>Revolutionizing learning through AI-powered question generation and feedback</h2>
+        <p><strong>Personalized questions and intelligent feedback are the keys to effective learning.</strong></p>
+        <p>In today's educational landscape, students need more than just static content. They need dynamic, personalized learning experiences that challenge them and provide immediate, constructive feedback.</p>
+        <p>We've launched an innovative educational technology project with a clear mission: to develop an AI-powered system that generates tailored questions and provides intelligent feedback, ensuring students receive a truly personalized learning experience.</p>
+        <p>It's called Kora-Edu.</p>
+        <p>Our focus is twofold:</p>
+        <ol>
+            <li><strong>AI Question Generation:</strong> Creating an AI system that can generate relevant, challenging questions across various subjects and difficulty levels, adapting to each student's learning pace and style.</li>
+            <li><strong>Intelligent Feedback:</strong> Developing an AI-powered feedback mechanism that not only assesses the correctness of answers but also provides detailed explanations, identifies knowledge gaps, and suggests personalized learning paths.</li>
+        </ol>
+        <p>Our team and our entire product strategy are aligned to achieve these goals, pushing the boundaries of what's possible in AI-assisted education.</p>
+        <p>We approach education and artificial intelligence as intertwined domains, tackling technical challenges through innovative engineering and cutting-edge research. Our aim is to advance AI capabilities in natural language processing, question generation, and adaptive learning while maintaining a strong emphasis on pedagogical best practices and ethical considerations.</p>
+        <p>This way, we can enhance learning experiences and outcomes for students worldwide.</p>
+        <p>Our laser-focus means we're not distracted by unnecessary management overhead or diverse product lines. We're committed to developing a tool that genuinely revolutionizes how students learn and how educators teach.</p>
+        <p>We are a small, passionate team based in New Zealand, dedicated to transforming education through AI-powered question generation and feedback. Our project is open-source, and you can find our work on GitHub at <a href="https://github.com/kora-edu">https://github.com/kora-edu</a>.</p>
+        <p>We're actively seeking like-minded individuals who share our vision for transforming education through responsible AI implementation. If you're passionate about education, artificial intelligence, and making a real difference in how students learn, we offer an opportunity to be part of something truly groundbreaking.</p>
+        <p>The future of personalized learning is here. Join us in shaping it.</p>
+        <p>Contact Us : gitHub</a></p>
+    </div>
 </body>
 </html>
