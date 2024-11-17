@@ -1,46 +1,21 @@
 {
-  "name": "just-the-docs",
-  "version": "0.3.3",
-  "description": "A modern Jekyll theme for documentation",
-  "repository": "just-the-docs/just-the-docs",
-  "license": "MIT",
-  "bugs": "https://github.com/just-the-docs/just-the-docs/issues",
-  "devDependencies": {
-    "npm-run-all": "^4.1.5",
-    "prettier": "^3.3.3",
-    "stylelint": "^16.10.0",
-    "stylelint-config-standard-scss": "^13.1.0"
-  },
+  "name": "particle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "lint": "npm-run-all --parallel --continue-on-error lint:*",
-    "lint:css": "stylelint '**/*.scss'",
-    "lint:formatting": "prettier --check '**/*.{scss,js,json}'",
-    "format": "prettier --write '**/*.{scss,js,json}'",
-    "test": "npm run lint"
+    "dev": "gulp"
   },
-  "stylelint": {
-    "ignoreFiles": [
-      "assets/css/just-the-docs-default.scss",
-      "assets/css/just-the-docs-light.scss",
-      "assets/css/just-the-docs-dark.scss"
-    ],
-    "extends": [
-      "stylelint-config-standard-scss"
-    ],
-    "rules": {
-      "alpha-value-notation": null,
-      "at-rule-empty-line-before": null,
-      "color-function-notation": null,
-      "media-feature-range-notation": "prefix",
-      "no-descending-specificity": null,
-      "scss/no-global-function-names": null
-    }
-  },
-  "prettier": {
-    "endOfLine": "lf",
-    "semi": false,
-    "singleQuote": false,
-    "tabWidth": 2,
-    "trailingComma": "es5"
+  "author": "Nathan Randecker",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1"
   }
 }
