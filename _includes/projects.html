@@ -1,3 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.user-details {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.user-details h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.development-journey {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+}
+
+.journey-stage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.journey-stage:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.contents {
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.contents h3 {
+    font-size: 32px;
+    margin-top: 0;
+    color: #333333;
+}
+
+.contents ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: #555555;
+}
+
+.contents p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666666;
+}
+
+@media screen and (max-width: 768px) {
+    .journey-stage {
+        flex-direction: column;
+    }
+    .journey-stage:nth-child(even) {
+        flex-direction: column;
+    }
+    .contents {
+        padding: 30px;
+    }
+}
+</style>
+</head>
+<body>
+
 <div class="user-details">
   <h1> Our Development Journey </h1>
 </div>
@@ -60,3 +140,6 @@
   </div>
   
 </div>
+
+</body>
+</html>
