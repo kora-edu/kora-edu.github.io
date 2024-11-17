@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
 <style>
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: Arial, sans-serif; /* Default sans-serif font */
 }
 
 .user-details {
     background-color: #f0f0f0; /* Light grey background */
     color: #333333; /* Dark grey text */
-    text-align: center;
-    padding: 20px 20px; /* Adjusted padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Adjusted padding */
     border-radius: 16px; /* Rounded corners */
     max-width: 900px;
     margin: 40px auto; /* Center the container */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    height: 80px; /* Set a fixed height to keep box proportionate */
 }
 
 .user-details h1 {
-    font-size: 32px; /* Adjusted font size */
+    font-size: 28px; /* Adjusted font size */
     margin: 0;
-    font-weight: 600;
+    font-weight: bold;
+    line-height: 1; /* Ensures heading is vertically centered */
 }
 
 .development-journey {
     background-color: #f7f7f7;
     padding: 60px 20px;
-    font-weight: 400;
 }
 
 .journey-stage {
@@ -56,7 +58,7 @@ body {
     font-size: 26px;
     margin-top: 0;
     color: #333333;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .contents ul {
