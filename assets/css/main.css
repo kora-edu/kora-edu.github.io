@@ -5,40 +5,40 @@
 
   /* Make .user a flex container */
   .user {
-    display: flex;
-    gap: 20px; /* Optional: adds space between each .tech box */
-    align-items: flex-start; /* Align items to the start for consistency */
-    justify-content: space-around; /* Distribute space evenly */
-    flex-wrap: wrap; /* Wrap items on smaller screens */
+      display: flex;
+      gap: 20px; /* Adds space between each .tech box */
+      align-items: flex-start; /* Align items to the top */
+      justify-content: space-around; /* Distribute space evenly */
+      flex-wrap: wrap; /* Wrap items on smaller screens */
   }
 
   /* Style each .tech box */
   .tech {
-    display: flex;
-    flex-direction: column; /* Arrange content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center;
-    max-width: 200px; /* Optional: set a max width for consistency */
+      display: flex;
+      flex-direction: column; /* Arrange content vertically */
+      align-items: center; /* Center content horizontally */
+      text-align: center;
+      max-width: 200px; /* Set a max width for consistency */
   }
 
   /* Ensure all headings align at the top */
   .tech h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 10px;
   }
 
   /* Make all icons uniform in size */
   .icon-uniform {
-    width: 80px; /* Set a consistent width */
-    height: 80px; /* Set a consistent height */
-    margin-bottom: 10px; /* Adds space below each icon */
-    transform: none; /* Remove inline scaling */
+      width: 80px; /* Set a consistent width */
+      height: 80px; /* Set a consistent height */
+      margin-bottom: 10px; /* Adds space below each icon */
   }
-  
+    
   /* Optional: Center-align content in each section */
   .tech {
-    text-align: center;
-  }  
+      text-align: center;
+  }
+
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 @import url(https://fonts.googleapis.com/css?family=Montserrat);html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
