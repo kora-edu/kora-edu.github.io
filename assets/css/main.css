@@ -1,59 +1,113 @@
-/* Adjusting text placement */
-.tech h2 {
-  font-size: 22px;
-  color: #1d1d1f;
+/* General font and color settings */
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333333;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+/* Intro section styling */
+.intro {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.intro h2 {
+  font-size: 30px;
   font-weight: 600;
-  margin-bottom: 10px; /* Reduced margin to move text higher */
-  margin-top: 5px; /* Move heading closer to the top */
+  color: #1d1d1f;
+  margin-bottom: 15px;
 }
 
-.tech p {
-  font-size: 16px;
-  color: #666666;
+.intro p {
+  font-size: 18px;
   line-height: 1.6;
-  margin-top: 10px; /* Move text up slightly */
-  padding: 0 10px;
-  flex-grow: 1; /* Make text fill space to push items upward */
+  color: #666666;
 }
 
-/* Center-align specific Insight icon */
-.insight-icon {
-  transform: translateX(-5px); /* Adjust as needed for centering */
+/* User container for flex alignment */
+.user {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
-/* General icon styling */
-.icon-uniform {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 5px; /* Move icon closer to heading */
-  opacity: 0.85;
-  transition: opacity 0.3s ease;
-}
-
-.icon-uniform:hover {
-  opacity: 1;
-}
-
-/* Container adjustments */
+/* Style each tech box */
 .tech {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   background-color: #ffffff;
-  border-radius: 16px;
-  padding: 20px;
+  border-radius: 20px;
+  padding: 30px 20px;
   width: 280px;
-  height: 380px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Softer shadow for a premium look */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  justify-content: flex-start; /* Align items to the top */
 }
 
 .tech:hover {
-  transform: scale(1.03);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px); /* Subtle upward movement */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Emphasized shadow on hover */
 }
+
+/* Heading style for each box */
+.tech h2 {
+  font-size: 24px;
+  color: #1d1d1f;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+/* Icon styling */
+.icon-uniform {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1)); /* Soft shadow for icons */
+}
+
+.icon-uniform:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Paragraph styling within tech box */
+.tech p {
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.5;
+  margin-top: 10px;
+  padding: 0 15px;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .user {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+  }
+  .tech {
+      width: 90%;
+      height: auto;
+  }
+}
+
+
 
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
