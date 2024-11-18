@@ -1,13 +1,38 @@
-/* Set global font to Segoe UI */
-* {
-  font-family: "Segoe UI", sans-serif;
-}
+  /* Set global font to Segoe UI */
+  * {
+    font-family: "Segoe UI", sans-serif;
+  }
 
-/* Custom styling for KORA icons */
-.icon-uniform {
-    width: 96px; /* Adjusted for a 20% increase */
-    height: 96px; /* Ensuring a consistent square shape */
-    margin-bottom: 10px; /* Adds some spacing below the icon */
+  /* Make .user a flex container */
+  .user {
+    display: flex;
+    gap: 20px; /* Optional: adds space between each .tech box */
+    align-items: flex-start; /* Align items to the start for consistency */
+    justify-content: space-around; /* Distribute space evenly */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+  }
+
+  /* Style each .tech box */
+  .tech {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    max-width: 200px; /* Optional: set a max width for consistency */
+  }
+
+  /* Ensure all headings align at the top */
+  .tech h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  /* Make all icons uniform in size */
+  .icon-uniform {
+    width: 80px; /* Set a consistent width */
+    height: 80px; /* Set a consistent height */
+    margin-bottom: 10px; /* Adds space below each icon */
+    transform: none; /* Remove inline scaling */
   }
   
   /* Optional: Center-align content in each section */
