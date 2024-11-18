@@ -1,3 +1,22 @@
+    .footer {
+      background-color: #1d1d1f; /* Darker shade for an elegant look */
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+
+    .footer p {
+      color: #a1a1a6; /* Subtle gray color for text */
+      margin: 0;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+    }
+
+    .footer p:hover {
+      color: #ffffff; /* Subtle color change on hover */
+      transition: color 0.3s ease;
+    }
+     
     /* Intro section styling */
   .intro {
     max-width: 800px;
