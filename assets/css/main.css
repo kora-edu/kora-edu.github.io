@@ -107,6 +107,25 @@ body {
   }
 }
 
+.footer {
+  background-color: #f0f0f5; /* Light gray for a softer look */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  border-top: 1px solid #e0e0e5; /* Optional: subtle border for separation */
+}
+
+.footer p {
+  color: #555555; /* Darker gray for good contrast */
+  margin: 0;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.footer p:hover {
+  color: #333333; /* Slightly darker color change on hover */
+  transition: color 0.3s ease;
+}
 
 
 
