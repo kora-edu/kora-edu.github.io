@@ -160,16 +160,25 @@ h2 {
 }
 
 .icon {
-  width: 150px; /* Increased size for emphasis */
-  height: 150px;
   margin-bottom: 20px;
   transition: transform 0.3s ease;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
+.team-icon {
+  width: 150px; /* Keep team.png at original size */
+  height: 150px;
+}
+
+.rocket-icon {
+  width: 100px; /* Smaller size for rocket.png */
+  height: 100px;
+}
+
 .icon:hover {
   transform: scale(1.1);
 }
+
 
 .section h3 {
   font-size: 26px;
