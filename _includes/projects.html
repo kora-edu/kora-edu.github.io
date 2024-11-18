@@ -14,135 +14,119 @@ h2 {
     font-size: 34px;
     font-weight: 600;
     color: #1d1d1f;
-    margin: 60px 0 30px 0; /* Spacing above and below the heading */
+    margin: 60px 0 30px 0;
     letter-spacing: -0.5px;
 }
 
-.development-journey {
+.section-container {
     background-color: #ffffff;
     padding: 60px 20px;
     border-radius: 20px;
     max-width: 1000px;
-    margin: 0 auto; /* Center the container */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.journey-stage {
+.section {
     display: flex;
     align-items: center;
     margin-bottom: 50px;
     padding: 20px;
+    flex-direction: column;
+    text-align: center;
 }
 
-.journey-stage:nth-child(even) {
-    flex-direction: row-reverse;
+.section:nth-child(even) {
+    flex-direction: column;
 }
 
-.contents {
-    background-color: #f9f9f9;
-    padding: 36px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
-    border-radius: 18px;
-    flex: 1;
+.icon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contents:hover {
-    transform: scale(1.02); /* Slight zoom on hover for interactivity */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Emphasized shadow on hover */
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.contents h3 {
-    font-size: 24px;
-    margin-top: 0;
+.section h3 {
+    font-size: 26px;
     color: #1d1d1f;
     font-weight: 600;
     letter-spacing: -0.3px;
+    margin-top: 10px;
 }
 
-.contents ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0 0 20px 0;
-    color: #555555;
-}
-
-.contents ul li {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555555;
-    position: relative;
-    padding-left: 20px;
-}
-
-.contents ul li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #0071e3;
-}
-
-.contents p {
+.section p {
     font-size: 17px;
     line-height: 1.7;
     color: #666666;
     margin-top: 10px;
+    max-width: 800px;
+}
+
+.notice {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-size: 18px;
+    color: #0071e3;
 }
 
 @media screen and (max-width: 768px) {
-    .journey-stage {
-        flex-direction: column;
+    .section {
         text-align: center;
     }
-    .journey-stage:nth-child(even) {
-        flex-direction: column;
+    .section h3 {
+        font-size: 24px;
     }
-    .contents {
-        padding: 28px;
+    .section p {
+        padding: 0 20px;
     }
 }
 </style>
 </head>
 <body>
 
-<h2>Our Development Journey</h2>
+  <h2>Get Ready for KORA!</h2>
 
-<div class="development-journey">
+  <div class="section-container">
   
-  <div class="journey-stage">
-    <div class="contents">
-      <h3>Concept & Ideation</h3>
-      <ul>
-        <li>Research & Planning</li>
-        <li>Initial User Interviews</li>
-      </ul>
-      <p>We began our journey by researching educational needs, exploring AI potential, and brainstorming features that could best support students and educators.</p>
-    </div>
-  </div>
-
-  <div class="journey-stage">
-    <div class="contents">
-      <h3>Core Product Launch</h3>
-      <ul>
-        <li>Core Features Implemented</li>
-        <li>Initial Testing & Feedback</li>
-      </ul>
-      <p>We launched the core version of KORA with essential features, including personalized study resources and AI-generated practice exams, focusing on user interaction and feedback.</p>
-    </div>
-  </div>
-
-  <div class="journey-stage">
-    <div class="contents">
-      <h3>Scaling & Growth</h3>
-      <ul>
-        <li>Feature Expansion</li>
-        <li>Preparing for Public Launch</li>
-      </ul>
-      <p>Our current focus is on expanding features, refining the user experience, and preparing for a full public launch. This stage includes adding advanced insights and data-driven feedback to support deeper learning.</p>
-    </div>
-  </div>
+      <div class="section">
+          <h3>Innovative Features</h3>
+          <p>KORA is packed with exciting tools to enhance your STEM learning experience. We’ve integrated AI to bring you personalized study resources, interactive practice exams, and insightful progress tracking.</p>
+          <img src="assets/formula.png" alt="Personalization" class="icon">
+      </div>
   
-</div>
+      <div class="section">
+          <h3>Join the Journey</h3>
+          <p>Our journey started with extensive research and development, focusing on the real needs of New Zealand STEM students. We’re constantly improving KORA based on feedback to make sure it meets your needs and expectations.</p>
+          <img src="assets/team.png" alt="Research" class="icon">
+      </div>
+  
+      <div class="section">
+          <h3>Upcoming Beta Launch</h3>
+          <p>We’re excited to announce that KORA will be rolling out a beta version in February 2025! Stay tuned for the latest updates and be among the first to experience our platform. Check back here for more details as we get closer to launch.</p>
+          <div class="notice">
+              Mark your calendars for February 2025! Be the first to experience KORA in action.
+          </div>
+          <img src="assets/rocket.png" alt="Launch" class="icon">
+      </div>
+      
+  </div>
 
 </body>
 </html>
