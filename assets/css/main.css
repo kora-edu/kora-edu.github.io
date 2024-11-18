@@ -216,14 +216,39 @@ h2 {
   }
 }
 
-.developers {
-    text-align: center;
-    color: #999999; /* Subtle grey color */
-    font-size: 14px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-weight: 400;
+/* Base icon styling */
+.icon {
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
+
+/* Specific size for team icon */
+.team-icon {
+  width: 150px; /* Size for team.png */
+  height: 150px;
+}
+
+/* Smaller size for rocket icon */
+.rocket-icon {
+  width: 100px; /* Reduced size for rocket.png */
+  height: 100px;
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+/* Developer Section */
+.developers {
+  text-align: center;
+  color: #999999; /* Subtle grey color */
+  font-size: 14px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
 
 
 
