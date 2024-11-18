@@ -1,19 +1,94 @@
-/* Set global font to Segoe UI */
+/* Set global font to match Apple-style */
 * {
-  font-family: "Segoe UI", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333333;
 }
 
-/* Custom styling for KORA icons */
+body {
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 40px;
+  letter-spacing: -0.5px;
+}
+
+/* Make .user a flex container */
+.user {
+  display: flex;
+  gap: 40px; /* Adds space between each .tech box */
+  align-items: flex-start; /* Align items to the top */
+  justify-content: center; /* Center-align the content */
+  max-width: 1000px;
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Style each .tech box */
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 300px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech:hover {
+  transform: scale(1.03); /* Slight zoom effect on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure headings align at the top and have consistent styling */
+.tech h2 {
+  font-size: 22px;
+  color: #1d1d1f;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Make all icons uniform in size and remove inline scaling */
 .icon-uniform {
-    width: 96px; /* Adjusted for a 20% increase */
-    height: 96px; /* Ensuring a consistent square shape */
-    margin-bottom: 10px; /* Adds some spacing below the icon */
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.icon-uniform:hover {
+  opacity: 1;
+}
+
+/* Paragraph styling for each .tech box */
+.tech p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+  margin-top: 0;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .user {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
   }
-  
-  /* Optional: Center-align content in each section */
   .tech {
-    text-align: center;
-  }  
+      max-width: 90%;
+  }
+}
+
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 @import url(https://fonts.googleapis.com/css?family=Montserrat);html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
