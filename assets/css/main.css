@@ -216,26 +216,15 @@ h2 {
   }
 }
 
-.developer-section {
+.developers {
   text-align: center;
+  color: #999999; /* Subtle grey color */
+  font-size: 14px;
   margin-top: 40px;
-  padding: 20px;
-  color: #666666;
+  margin-bottom: 20px;
+  font-weight: 400;
 }
 
-.developer-section h3 {
-  font-size: 18px;
-  color: #333333;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.developer-section p {
-  font-size: 16px;
-  color: #666666;
-  line-height: 1.8;
-  margin: 0;
-}
 
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
