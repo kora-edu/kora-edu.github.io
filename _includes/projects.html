@@ -4,30 +4,34 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif; /* Default sans-serif font */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333333;
+    background-color: #fafafa;
 }
 
 h2 {
     text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    color: #333333;
-    margin: 40px 0; /* Spacing above and below the heading */
+    font-size: 34px;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin: 60px 0 30px 0; /* Spacing above and below the heading */
+    letter-spacing: -0.5px;
 }
 
 .development-journey {
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     padding: 60px 20px;
-    border-radius: 16px; /* Rounded corners for the entire grey background */
-    max-width: 900px;
+    border-radius: 20px;
+    max-width: 1000px;
     margin: 0 auto; /* Center the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
 }
 
 .journey-stage {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    padding: 20px;
 }
 
 .journey-stage:nth-child(even) {
@@ -35,42 +39,66 @@ h2 {
 }
 
 .contents {
-    background-color: #ffffff;
-    padding: 32px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 16px; /* Rounded corners for each section */
+    background-color: #f9f9f9;
+    padding: 36px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
     flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contents:hover {
+    transform: scale(1.02); /* Slight zoom on hover for interactivity */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Emphasized shadow on hover */
 }
 
 .contents h3 {
-    font-size: 26px;
+    font-size: 24px;
     margin-top: 0;
-    color: #333333;
-    font-weight: bold;
+    color: #1d1d1f;
+    font-weight: 600;
+    letter-spacing: -0.3px;
 }
 
 .contents ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 20px;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 0 20px 0;
     color: #555555;
 }
 
-.contents p {
+.contents ul li {
     font-size: 18px;
     line-height: 1.6;
+    color: #555555;
+    position: relative;
+    padding-left: 20px;
+}
+
+.contents ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0071e3;
+}
+
+.contents p {
+    font-size: 17px;
+    line-height: 1.7;
     color: #666666;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
     .journey-stage {
         flex-direction: column;
+        text-align: center;
     }
     .journey-stage:nth-child(even) {
         flex-direction: column;
     }
     .contents {
-        padding: 24px;
+        padding: 28px;
     }
 }
 </style>
@@ -83,10 +111,10 @@ h2 {
   
   <div class="journey-stage">
     <div class="contents">
-      <h3> Concept & Ideation </h3>
+      <h3>Concept & Ideation</h3>
       <ul>
-        <li> Research & Planning</li>
-        <li> Initial User Interviews</li>
+        <li>Research & Planning</li>
+        <li>Initial User Interviews</li>
       </ul>
       <p>We began our journey by researching educational needs, exploring AI potential, and brainstorming features that could best support students and educators.</p>
     </div>
@@ -94,10 +122,10 @@ h2 {
 
   <div class="journey-stage">
     <div class="contents">
-      <h3> Core Product Launch </h3>
+      <h3>Core Product Launch</h3>
       <ul>
-        <li> Core Features Implemented</li>
-        <li> Initial Testing & Feedback</li>
+        <li>Core Features Implemented</li>
+        <li>Initial Testing & Feedback</li>
       </ul>
       <p>We launched the core version of KORA with essential features, including personalized study resources and AI-generated practice exams, focusing on user interaction and feedback.</p>
     </div>
@@ -105,10 +133,10 @@ h2 {
 
   <div class="journey-stage">
     <div class="contents">
-      <h3> Scaling & Growth </h3>
+      <h3>Scaling & Growth</h3>
       <ul>
-        <li> Feature Expansion</li>
-        <li> Preparing for Public Launch</li>
+        <li>Feature Expansion</li>
+        <li>Preparing for Public Launch</li>
       </ul>
       <p>Our current focus is on expanding features, refining the user experience, and preparing for a full public launch. This stage includes adding advanced insights and data-driven feedback to support deeper learning.</p>
     </div>
