@@ -249,7 +249,26 @@ h2 {
   font-weight: 400;
 }
 
+/* General logo styling */
+.header img {
+  max-width: 100%; /* Ensure the logo does not exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent any inline display issues */
+  margin: 0 auto; /* Center the logo */
+}
 
+/* Specific rules for smaller screens */
+@media (max-width: 768px) {
+  .header img {
+      max-width: 150px; /* Limit logo width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header img {
+      max-width: 100px; /* Further reduce logo size on very small screens */
+  }
+}
 
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
