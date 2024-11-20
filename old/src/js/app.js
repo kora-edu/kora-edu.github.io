@@ -4,76 +4,77 @@ document.addEventListener("DOMContentLoaded", function () {
   particlesJS('particles-js', {
     "particles": {
       "number": {
-        "value": 30,
+        "value": 50, // More particles for a dramatic effect
         "density": {
           "enable": true,
           "value_area": 800
         }
       },
       "color": {
-        // Gradient colors
-        "value": ["#FF5733", "#33FF57", "#3357FF"]
+        "value": ["#FF5733", "#33FF57", "#3357FF", "#FFC300", "#DAF7A6"] // Cycling vibrant colors
       },
       "shape": {
-        "type": "circle", // Keeps simple circular shapes for particles
+        "type": "polygon", // Shapes changed to polygons for variety
         "stroke": {
-          "width": 0,
-          "color": "#000000"
+          "width": 1,
+          "color": "#ffffff"
+        },
+        "polygon": {
+          "nb_sides": 6 // Hexagonal shapes for a modern aesthetic
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 0.6,
         "random": true,
         "anim": {
           "enable": true,
-          "speed": 1,
+          "speed": 0.5, // Slow fade in/out effect
           "opacity_min": 0.3,
           "sync": false
         }
       },
       "size": {
-        "value": 4,
+        "value": 6, // Larger particle size for emphasis
         "random": true,
         "anim": {
           "enable": true,
-          "speed": 5,
-          "size_min": 0.1,
+          "speed": 4,
+          "size_min": 3,
           "sync": false
         }
       },
       "line_linked": {
         "enable": true,
-        "distance": 150,
+        "distance": 200,
         "color": "#ffffff",
-        "opacity": 0.4,
+        "opacity": 0.5,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 3,
-        "direction": "none",
-        "random": true,
+        "speed": 2,
+        "direction": "none", // Allows wave effect
+        "random": false, // Coordinated movement
         "straight": false,
-        "out_mode": "out",
-        "bounce": false,
+        "out_mode": "bounce", // Particles bounce off edges
+        "bounce": true,
         "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
+          "enable": true,
+          "rotateX": 3000, // Wave motion settings
+          "rotateY": 3000
         }
       }
     },
     "interactivity": {
       "detect_on": "canvas",
       "events": {
-        // Add hover interaction for bubble effect
         "onhover": {
           "enable": true,
-          "mode": "bubble"
+          "mode": "repulse" // Dramatic repulsion effect on hover
         },
         "onclick": {
           "enable": true,
-          "mode": "push"
+          "mode": "push" // Adds more particles on click
         },
         "resize": true
       },
@@ -85,18 +86,18 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         },
         "bubble": {
-          "distance": 250, // Distance within which particles "bubble" on hover
-          "size": 8, // Increase particle size during hover
+          "distance": 300,
+          "size": 10,
           "duration": 2,
-          "opacity": 0.8, // Increase opacity of bubbled particles
+          "opacity": 0.8,
           "speed": 3
         },
         "repulse": {
-          "distance": 200,
-          "duration": 0.4
+          "distance": 200, // Pushes particles away dramatically
+          "duration": 0.5
         },
         "push": {
-          "particles_nb": 4
+          "particles_nb": 6 // Add extra particles on click
         },
         "remove": {
           "particles_nb": 2
