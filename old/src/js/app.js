@@ -1,80 +1,88 @@
+/* sweetScroll load */
 document.addEventListener("DOMContentLoaded", function () {
   new SweetScroll({/* some options */});
 
+  /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
   particlesJS('particles-js', {
     "particles": {
       "number": {
-        "value": 50, // More particles for a dramatic effect
+        "value": 30,
         "density": {
           "enable": true,
           "value_area": 800
         }
       },
       "color": {
-        "value": ["#FF5733", "#33FF57", "#3357FF", "#FFC300", "#DAF7A6"] // Cycling vibrant colors
+        "value": "#ffffff"
       },
       "shape": {
-        "type": "polygon", // Shapes changed to polygons for variety
+        "type": "polygon",
         "stroke": {
-          "width": 1,
-          "color": "#ffffff"
+          "width": 0,
+          "color": "#000000"
         },
         "polygon": {
-          "nb_sides": 6 // Hexagonal shapes for a modern aesthetic
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
         }
       },
       "opacity": {
-        "value": 0.6,
-        "random": true,
+        "value": 0.5,
+        "random": false,
         "anim": {
-          "enable": true,
-          "speed": 0.5, // Slow fade in/out effect
-          "opacity_min": 0.3,
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
           "sync": false
         }
       },
       "size": {
-        "value": 6, // Larger particle size for emphasis
+        "value": 3,
         "random": true,
         "anim": {
-          "enable": true,
-          "speed": 4,
-          "size_min": 3,
+          "enable": false,
+          "speed": 19.18081918081918,
+          "size_min": 0.1,
           "sync": false
         }
       },
       "line_linked": {
         "enable": true,
-        "distance": 200,
+        "distance": 150,
         "color": "#ffffff",
-        "opacity": 0.5,
+        "opacity": 0.4,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 2,
-        "direction": "none", // Allows wave effect
-        "random": false, // Coordinated movement
+        "speed": 4,
+        "direction": "none",
+        "random": true,
         "straight": false,
-        "out_mode": "bounce", // Particles bounce off edges
-        "bounce": true,
+        "out_mode": "out",
+        "bounce": false,
         "attract": {
-          "enable": true,
-          "rotateX": 3000, // Wave motion settings
-          "rotateY": 3000
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
         }
-      }
+      },
+      nb: 80
     },
     "interactivity": {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
-          "mode": "repulse" // Dramatic repulsion effect on hover
+          "enable": false,
+          "mode": "grab"
         },
         "onclick": {
           "enable": true,
-          "mode": "push" // Adds more particles on click
+          "mode": "push"
         },
         "resize": true
       },
@@ -86,18 +94,18 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         },
         "bubble": {
-          "distance": 300,
-          "size": 10,
+          "distance": 400,
+          "size": 40,
           "duration": 2,
-          "opacity": 0.8,
+          "opacity": 8,
           "speed": 3
         },
         "repulse": {
-          "distance": 200, // Pushes particles away dramatically
-          "duration": 0.5
+          "distance": 200,
+          "duration": 0.4
         },
         "push": {
-          "particles_nb": 6 // Add extra particles on click
+          "particles_nb": 4
         },
         "remove": {
           "particles_nb": 2
@@ -106,4 +114,5 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     "retina_detect": true
   });
+
 }, false);
