@@ -1,6 +1,8 @@
+/* sweetScroll load */
 document.addEventListener("DOMContentLoaded", function () {
   new SweetScroll({/* some options */});
 
+  /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
   particlesJS('particles-js', {
     "particles": {
       "number": {
@@ -11,32 +13,39 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "color": {
-        // Gradient colors
-        "value": ["#FF5733", "#33FF57", "#3357FF"]
+        "value": "#ffffff"
       },
       "shape": {
-        "type": "circle", // Keeps simple circular shapes for particles
+        "type": "polygon",
         "stroke": {
           "width": 0,
           "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
         }
       },
       "opacity": {
         "value": 0.5,
-        "random": true,
+        "random": false,
         "anim": {
-          "enable": true,
+          "enable": false,
           "speed": 1,
-          "opacity_min": 0.3,
+          "opacity_min": 0.1,
           "sync": false
         }
       },
       "size": {
-        "value": 4,
+        "value": 3,
         "random": true,
         "anim": {
-          "enable": true,
-          "speed": 5,
+          "enable": false,
+          "speed": 19.18081918081918,
           "size_min": 0.1,
           "sync": false
         }
@@ -50,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       "move": {
         "enable": true,
-        "speed": 3,
+        "speed": 4,
         "direction": "none",
         "random": true,
         "straight": false,
@@ -61,15 +70,15 @@ document.addEventListener("DOMContentLoaded", function () {
           "rotateX": 600,
           "rotateY": 1200
         }
-      }
+      },
+      nb: 80
     },
     "interactivity": {
       "detect_on": "canvas",
       "events": {
-        // Add hover interaction for bubble effect
         "onhover": {
-          "enable": true,
-          "mode": "bubble"
+          "enable": false,
+          "mode": "grab"
         },
         "onclick": {
           "enable": true,
@@ -85,10 +94,10 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         },
         "bubble": {
-          "distance": 250, // Distance within which particles "bubble" on hover
-          "size": 8, // Increase particle size during hover
+          "distance": 400,
+          "size": 40,
           "duration": 2,
-          "opacity": 0.8, // Increase opacity of bubbled particles
+          "opacity": 8,
           "speed": 3
         },
         "repulse": {
@@ -105,4 +114,5 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     "retina_detect": true
   });
+
 }, false);
