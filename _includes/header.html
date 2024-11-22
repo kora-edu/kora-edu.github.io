@@ -4,16 +4,12 @@
           <img src="assets/img/KoraLogo.png" alt="KORA Logo" class="logo">
           <span class="site-description">{{site.user_title}}</span>
       </h1>
-      <div class="header-icons">
-        <a aria-label="Send email" href="mailto:{{site.email}}"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My Github" target="_blank" href="https://github.com/kora-edu"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+      <!-- Try KORA button -->
+      <div class="header-button">
+        <a href="https://your-external-site-link.com" class="apple-button">Try KORA</a>
       </div>
       <div class="header-links">
         <a class="link" href="#about" data-scroll>About KORA</a>
-      </div>
-      <!-- Added Try KORA button -->
-      <div class="header-button">
-        <a href="https://your-external-site-link.com" class="apple-button">Try KORA</a>
       </div>
   </div>
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -25,12 +21,13 @@
       background-color: #000;
       color: #fff;
       font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      padding: 12px 24px;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 16px 32px;
       border-radius: 8px;
       text-align: center;
       text-decoration: none;
-      margin-top: 20px;
+      margin: 20px auto;
       transition: background-color 0.3s ease;
   }
   .apple-button:hover {
@@ -38,6 +35,10 @@
   }
   .header-button {
       margin-top: 20px;
+      text-align: center;
+  }
+  .header-links {
+      margin-top: 40px;
       text-align: center;
   }
 </style>
