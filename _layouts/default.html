@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
 
-{% include head.html %}
+<head>
+  <!-- Google Fonts for Fira Code -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Other head content -->
+  {% include head.html %}
+</head>
 
 <body>
-	<div id="wrap">
-	  	
-	  	<!-- Navigation -->
-	  	{% include menu.html %}
+  <div id="wrap">
+      
+      <!-- Navigation -->
+      {% include menu.html %}
     
     <!-- Icon menu -->
-	  <a {% if site.reverse == true %}id="nav-menu-left"{% else %}id="nav-menu"{% endif %}>
-	  	<div id="menu"></div>
-	  </a>
+    <a {% if site.reverse == true %}id="nav-menu-left"{% else %}id="nav-menu"{% endif %}>
+      <div id="menu"></div>
+    </a>
 
       <!-- Header -->
       {% if site.custom_header == true %}
@@ -22,15 +28,15 @@
       {% endif %}
 
     <!-- Main content -->
-	  <div id="container">
-		  
-		<main>
+    <div id="container">
+      
+    <main>
 
-			{{ content }}
+      {{ content }}
 
-	  </main>
-		
-		  <!-- Pagination links -->
+    </main>
+    
+      <!-- Pagination links -->
       {% if paginator.total_pages > 1 %}
         <div class="pagination">
           {% if paginator.previous_page == 1 %}
@@ -59,14 +65,14 @@
         </div>
         {% endif %}
 
-	  </div>
-	    
-	    <!-- Footer -->
-	    {% include footer.html %}
+    </div>
+      
+      <!-- Footer -->
+      {% include footer.html %}
 
-	    <!-- Script -->
+      <!-- Script -->
       {% include script.html %}
 
-	</div>
+  </div>
 </body>
 </html>
