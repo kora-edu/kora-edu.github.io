@@ -49,7 +49,10 @@ gantt
 <!-- KORA Notices Section -->
 <h2>KORA Notices</h2>
 <div class="notices">
-  {% include announcements.html %}
+  {% capture announcements %}
+    {% include announcements.html %}
+  {% endcapture %}
+  {{ announcements | markdownify }}
 </div>
 
 <!-- Section Break -->
