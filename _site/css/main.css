@@ -417,6 +417,20 @@ code {
   color: #8c8c8c;
   background-color: white; }
 
+  /* Adjust the header image and text alignment -------------------------------- KORA LOGO */
+  
+header h1 img {
+  display: inline-block; /* Ensure the image is inline */
+  vertical-align: middle; /* Vertically align the image with the text */
+}
+
+header h1 {
+  font-size: 2em; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+}
+
+
 /* Set the vertical rhythm (and padding-left) for lists inside post content */
 .content ul, .content ol {
   line-height: 1.5em;
