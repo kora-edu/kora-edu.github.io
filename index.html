@@ -23,13 +23,7 @@ gantt
     axisFormat  %b %d
     excludes weekends
 
-    %% Define task classes for styling
-    classDef done      fill:#9f9,  stroke:#0f0,stroke-width:2px
-    classDef active    fill:#ff9,  stroke:#f90,stroke-width:2px
-    classDef future    fill:#f99,  stroke:#f00,stroke-width:2px
-    classDef milestone fill:#0f0,  stroke:#0a0,stroke-width:2px
-    classDef section   fill:#ddd,  stroke:#000,stroke-width:1px
-
+    %% Milestone 1
     section Milestone 1 - Marking and Question Generation Portal Setup
     Requirement Analysis             :done,    t1, 2024-11-05, 3d
     Design and Planning              :done,    t2, after t1, 2d
@@ -37,35 +31,34 @@ gantt
     Testing and Deployment           :done,    t4, after t3, 2d
     Milestone 1 Completed            :milestone, m1, after t4, 0d
 
+    %% Milestone 2
     section Milestone 2 - LTI Plugin Framework and Second Fine-Tune
     LTI Framework Setup              :done,    t5, after m1, 5d
     Model Fine-Tuning                :done,    t6, after t5, 5d
     Milestone 2 Completed            :milestone, m2, after t6, 0d
 
+    %% Milestone 3
     section Milestone 3 - User Testing Site and API Integration
     User Testing Site Setup          :active,  t7, after m2, 5d
     API Integration                  :active,  t8, after t7, 5d
     Milestone 3 Completed            :milestone, m3, after t8, 0d
 
+    %% Milestone 4
     section Milestone 4 - API, Database Setup, and Feedback Storage
     API Development                  :active,  t9, after m3, 4d
     Database Setup                   :active,  t10, after t9, 3d
     Feedback Storage Implementation  :active,  t11, after t10, 3d
     Milestone 4 Completed            :milestone, m4, after t11, 0d
 
+    %% Prototype Development
     section Prototype Development
     Frontend Completion              :future,  t12, after m4, 7d
     Backend Completion               :future,  t13, after t12, 8d
     Prototype Ready                  :milestone, m5, after t13, 0d
 
+    %% User Testing
     section User Testing
     Final Testing Phase Begins       :future,  t14, after m5, 10d
-
-    %% Assign classes to tasks
-    class t1,t2,t3,t4,t5,t6 done
-    class t7,t8,t9,t10,t11 active
-    class t12,t13,t14 future
-    class m1,m2,m3,m4,m5 milestone
 </div>
 
 <!-- Featured Post -->
