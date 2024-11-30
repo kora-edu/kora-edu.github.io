@@ -1,8 +1,8 @@
+# Site settings
 title: Monochrome | A minimal, responsive Jekyll blog theme
 description: "A minimal, responsive, ready-to-use blog template, built with Jekyll."
 url: "https://kora-edu.github.io" # Use your GitHub Pages site URL
-# baseurl: "/monochrome" # Ensure this matches your repository name if hosted on GitHub Pages (e.g., /monochrome or /repo-name)
-baseurl: "" # Ensure this matches your repository name if hosted on GitHub Pages (e.g., /monochrome or /repo-name)
+baseurl: "" # Ensure this matches your repository name if hosted on GitHub Pages
 author:
   name: "KORA"
   email: "koraedu.team@gmail.com"
@@ -27,3 +27,13 @@ defaults:
 
 # Plugins
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Custom variables
+version: "1.0.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
