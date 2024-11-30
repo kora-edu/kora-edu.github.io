@@ -420,22 +420,16 @@ code {
   /* Adjust the header image and text alignment -------------------------------- KORA LOGO */
 
 header h1 img {
-  display: inline-block; /* Ensure the image is inline */
-  vertical-align: middle; /* Vertically align the image with the text */
+  display: inline-block; /* Ensure inline behavior */
+  vertical-align: middle; /* Align with the text */
+  transform: translateY(5px); /* Move down */
+  margin: 0; /* Remove margin inherited from global img rule */
 }
-
-  /* more */
 
 header h1 {
-  font-size: 2em; /* Adjust as needed */
-  display: flex;
-  align-items: center;
-}
-
-header h1 img {
-  display: inline-block; /* Ensure the image is inline */
-  vertical-align: middle; /* Keep it aligned with the text */
-  transform: translateY(5px); /* Adjust value to move down */
+  display: flex; /* Ensure the h1 behaves as a flex container */
+  align-items: center; /* Align items vertically */
+  gap: 0.2em; /* Optional: Add spacing between logo and text */
 }
 
 
