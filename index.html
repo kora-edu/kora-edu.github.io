@@ -48,20 +48,9 @@ gantt
 
 <!-- KORA Notices Section -->
 <h2>KORA Notices</h2>
-<div class="kora-notices">
-  <ul>
-    {% for page in site.pages %}
-      {% if page.title == "Announcements" %}
-        <li>
-          <h3><a href="{{ page.url | prepend: site.baseurl }}"><u>{{ page.title }}</u></a></h3>
-          {% if page.date %}
-            <time datetime="{{ page.date | date_to_xmlschema }}"><i>{{ page.date | date_to_string }}</i></time>
-          {% endif %}
-          <p>{{ page.content | strip_html | truncatewords:30 }}</p>
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+<div class="notices">
+  {% assign announcements_page = site.pages | where: "title", "Announcements" | first %}
+  {{ announcements_page.content }}
 </div>
 
 <!-- Section Break -->
