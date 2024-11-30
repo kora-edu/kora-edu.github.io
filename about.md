@@ -4,15 +4,6 @@ title: KORA blog-posts
 description: Learn more about KORA and our development process.
 ---
 
-## About KORA
-KORA is an AI-driven educational tool designed to enhance learning experiences through personalized and engaging content. This blog documents our journey as we develop and improve KORA.
-
-## Features
-- Adaptive learning tools powered by AI
-- Seamless integration with existing educational platforms
-- Insights and analytics for personalized education
-- Open-source components for community contributions
-
 ## Blog Posts
 Below, you'll find a complete list of blog posts about our development progress:
 
