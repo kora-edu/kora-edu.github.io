@@ -1,0 +1,30 @@
+title: KORA Development Blog
+description: "A minimal, responsive blog documenting the development of KORA."
+url: "https://kora-edu.github.io" # Your GitHub Pages site URL
+baseurl: "" # Set this to an empty string if this is the root of your GitHub Pages site
+
+author:
+  name: "KORA Team"
+  email: "koraedu.team@gmail.com"
+  url: "https://trykora.ai" # Link to the main website
+
+# Build settings
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
+markdown: kramdown
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap # Add this if you want a sitemap.xml
