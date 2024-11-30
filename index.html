@@ -9,7 +9,7 @@ layout: default
     This site documents our progress and updates as we work on creating KORA, our AI-driven educational tool. Stay tuned for regular updates and insights into the development process!
   </p>
   <p>
-    Please note: This is <strong>NOT</strong> our main site. You can visit the official KORA website here: 
+    Please note: This is <strong>NOT</strong> our main site. You can visit the official KORA website here:
     <a href="https://trykora.ai" target="_blank">trykora.ai</a>.
   </p>
 </div>
@@ -49,8 +49,7 @@ gantt
 <!-- KORA Notices Section -->
 <h2>KORA Notices</h2>
 <div class="notices">
-  {% assign announcements_page = site.pages | where: "title", "Announcements" | first %}
-  {{ announcements_page.content }}
+  {% include announcements.html %}
 </div>
 
 <!-- Section Break -->
