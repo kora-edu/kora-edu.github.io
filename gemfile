@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+
+gem "jekyll", "~> 4.0"         # Replace "~> 4.0" with the specific version if required
+gem "jekyll-paginate"          # Pagination plugin
+gem "jekyll-sitemap"           # Sitemap generator
+gem 'wdm', '>= 0.1.0', :platforms => [:mswin, :mingw]
+
