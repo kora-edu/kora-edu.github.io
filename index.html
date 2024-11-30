@@ -1,30 +1,21 @@
----
-layout: default
----
-
-<!-- Custom Intro Section -->
-<div class="custom-intro">
-  <h1>Welcome to KORA's Development Blog</h1>
-  <p>
-    This site documents our progress and updates as we work on creating KORA, our AI-driven educational tool. Stay tuned for regular updates and insights into the development process!
-  </p>
-  <p>
-    Please note: This is <strong>NOT</strong> our main site. You can visit the official KORA website here: 
-    <a href="https://trykora.ai" target="_blank">trykora.ai</a>.
-  </p>
-</div>
-
-<!-- Posts -->
-<ul id="posts">
-
-  {% for post in paginator.posts %}
-
-    <li class="post">
-      <h2><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{% if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</a></h2>
-      <time datetime="{{ post.date | date_to_xmlschema }}" class="by-line"><i>{{ post.date | date_to_string }}</i></time>
-      <p>{{ post.content | strip_html | truncatewords:50 }}</p>
-    </li>
-
-  {% endfor %}
-
-</ul>
+<nav {% if site.reverse == true %}id="nav-left"{% else %}id="nav"{% endif %}>
+	<div id="nav-list">
+	  <!-- Home Link -->
+	  <a href="{{ site.baseurl }}/">Home</a>
+  
+	  <!-- Custom Static Links -->
+	  <a href="{{ site.baseurl }}/about" title="About KORA">About KORA</a>
+	  <a href="{{ site.baseurl }}/blog" title="Development Blog">Development Blog</a>
+  
+	  <!-- External Links -->
+	  <a href="https://trykora.ai" title="KORA Website" target="_blank">Visit Main Site</a>
+  
+	  <!-- Nav footer -->
+	  {% if site.custom_nav_footer == true %}
+		{% include nav-footer-custom.html %}
+	  {% else %}
+		{% include nav-footer.html %}
+	  {% endif %}
+	</div>
+  </nav>
+  
