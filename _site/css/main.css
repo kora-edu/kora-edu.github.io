@@ -516,6 +516,35 @@ footer {
   padding: 0.6667em 0;
 }
 
+.custom-intro {
+  text-align: center;
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.custom-intro h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.custom-intro p {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 10px;
+}
+
+.custom-intro a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.custom-intro a:hover {
+  text-decoration: underline;
+}
+
 /*
  * A Github stylesheet to highlight code snippet
  * https://github.com/mojombo/tpw/blob/master/css/syntax.css
