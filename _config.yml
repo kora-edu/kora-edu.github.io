@@ -1,12 +1,13 @@
-title: KORA Development Blog
-description: "A minimal, responsive blog documenting the development of KORA."
-url: "https://kora-edu.github.io" # Your GitHub Pages site URL
-baseurl: "" # Set this to an empty string if this is the root of your GitHub Pages site
+# Site settings
+title: Monochrome | A minimal, responsive Jekyll blog theme
+description: "A minimal, responsive, ready-to-use blog template, built with Jekyll."
+url: "https://kora-edu.com" # Your custom domain URL
+baseurl: "" # Leave blank when using a custom domain
 
 author:
-  name: "KORA Team"
+  name: "KORA"
   email: "koraedu.team@gmail.com"
-  url: "https://trykora.ai" # Link to the main website
+  url: "https://kora-edu.com"
 
 # Build settings
 source: .
@@ -18,7 +19,8 @@ markdown: kramdown
 
 # Default values
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
       type: "posts"
     values:
@@ -27,4 +29,12 @@ defaults:
 # Plugins
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap # Add this if you want a sitemap.xml
+  - jekyll-sitemap
+
+# Custom variables
+version: "1.0.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
