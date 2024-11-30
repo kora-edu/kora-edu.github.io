@@ -16,31 +16,29 @@ layout: default
 
 <!-- Mermaid Chart Section -->
 <h2>Project Timeline</h2>
-<div class="mermaid-container">
-  <div class="mermaid">
-    gantt
-      title KORA Development Timeline
-      dateFormat  YYYY-MM-DD
-      axisFormat  %b %d
+<div class="mermaid">
+gantt
+    title KORA Development Timeline
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %d
 
-      section Milestone 1
-      Marking and question generation portal setup :done, 2024-11-05, 10d
+    section Milestone 1
+    Marking and question generation portal setup       :done,   m1, 2024-11-05, 10d
 
-      section Milestone 2
-      LTI plugin framework and second fine-tune :done, 2024-11-18, 10d
+    section Milestone 2
+    LTI plugin framework and second fine-tune          :done,   m2, after m1, 10d
 
-      section Milestone 3
-      User testing site and API integration :active, 2024-12-12, 10d
+    section Milestone 3
+    User testing site and API integration              :active, m3, after m2, 10d
 
-      section Milestone 4
-      API, database setup, and feedback storage :active, 2024-12-31, 10d
+    section Milestone 4
+    API, database setup, and feedback storage          :active, m4, after m3, 10d
 
-      section Prototype Development
-      Frontend and Backend completion :active, 2025-01-15, 15d
+    section Prototype Development
+    Frontend and Backend completion                    :active, dev, after m4, 15d
 
-      section User Testing
-      Final phase begins :active, 2025-02-20, 10d
-  </div>
+    section User Testing
+    Final phase begins                                 :active, test, after dev, 10d
 </div>
 
 <!-- Featured Post -->
@@ -62,16 +60,3 @@ layout: default
 <script>
   mermaid.initialize({ startOnLoad: true });
 </script>
-
-<!-- Styling for Responsive Chart -->
-<style>
-  .mermaid-container {
-    max-width: 100%;
-    overflow-x: auto;
-    padding: 1rem 0;
-  }
-  .mermaid {
-    display: inline-block;
-    max-width: 100%;
-  }
-</style>
