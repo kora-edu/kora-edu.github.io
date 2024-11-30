@@ -50,14 +50,14 @@ gantt
 <h2>KORA Notices</h2>
 <div class="kora-notices">
   <ul>
-    {% for notice in site.posts %}
-      {% if notice.path contains "announcements.md" %}
+    {% for page in site.pages %}
+      {% if page.title == "Announcements" %}
         <li>
-          <h3><a href="{{ notice.url | prepend: site.baseurl }}"><u>{{ notice.title }}</u></a></h3>
-          {% if notice.date %}
-            <time datetime="{{ notice.date | date_to_xmlschema }}"><i>{{ notice.date | date_to_string }}</i></time>
+          <h3><a href="{{ page.url | prepend: site.baseurl }}"><u>{{ page.title }}</u></a></h3>
+          {% if page.date %}
+            <time datetime="{{ page.date | date_to_xmlschema }}"><i>{{ page.date | date_to_string }}</i></time>
           {% endif %}
-          <p>{{ notice.content | strip_html | truncatewords:30 }}</p>
+          <p>{{ page.content | strip_html | truncatewords:30 }}</p>
         </li>
       {% endif %}
     {% endfor %}

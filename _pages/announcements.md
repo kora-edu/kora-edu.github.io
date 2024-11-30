@@ -1,5 +1,7 @@
 ---
+layout: default
 title: Announcements
+permalink: /announcements/
 date: 2024-11-30
 ---
 
