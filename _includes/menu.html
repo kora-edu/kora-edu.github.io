@@ -1,21 +1,7 @@
-<nav {% if site.reverse == true %}id="nav-left"{% else %}id="nav"{% endif %}>
+<nav>
 	<div id="nav-list">
-	  <!-- Home Link -->
-	  <a href="{{ site.baseurl }}/">Home</a>
-  
-	  <!-- Custom Static Links -->
-	  <a href="{{ site.baseurl }}/about" title="About KORA">About KORA</a>
-	  <a href="{{ site.baseurl }}/blog" title="Development Blog">Development Blog</a>
-  
-	  <!-- External Links -->
-	  <a href="https://trykora.ai" title="KORA Website" target="_blank">Visit Main Site</a>
-  
-	  <!-- Nav footer -->
-	  {% if site.custom_nav_footer == true %}
-		{% include nav-footer-custom.html %}
-	  {% else %}
-		{% include nav-footer.html %}
-	  {% endif %}
+	  <a href="#">Test Link</a>
+	  {% include link.html %}
 	</div>
   </nav>
   
