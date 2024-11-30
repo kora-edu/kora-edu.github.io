@@ -14,6 +14,23 @@ layout: default
   </p>
 </div>
 
+<!-- Mermaid Chart Section -->
+<h2>Project Timeline</h2>
+<div class="mermaid">
+  gantt
+    title KORA Development Timeline
+    dateFormat  YYYY-MM-DD
+    section Milestone 1
+    Marking portal and question generation portal :done, 2024-11-05, 10d
+    ENV setup and GPU renting :done, 2024-11-05, 10d
+    section Milestone 2
+    LTI plugin framework :active, 2024-11-18, 14d
+    Fine-tuning model for JBdata5 :active, 2024-11-18, 14d
+    section Milestone 3
+    Frontend testing and API integration :2024-12-12, 15d
+    Setup tryKORA domain :2024-12-12, 10d
+</div>
+
 <!-- Featured Post -->
 <h2>Featured Post</h2>
 <ul id="posts">
@@ -27,3 +44,9 @@ layout: default
     {% endif %}
   {% endfor %}
 </ul>
+
+<!-- Mermaid.js Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.4.0/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ startOnLoad: true });
+</script>
