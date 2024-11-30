@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About KORA
+title: KORA blog-posts
 description: Learn more about KORA and our development process.
 ---
 
