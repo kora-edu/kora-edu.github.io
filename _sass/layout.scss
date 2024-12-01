@@ -30,13 +30,14 @@
 }
 
 /* Logo Styling */
-#header .header-logo {
+.header-logo {
   height: 50px !important; /* Constrain logo height */
   width: auto !important; /* Maintain aspect ratio */
   max-width: none !important; /* Override global img max-width */
   display: inline-block !important; /* Prevent block-level behavior */
   object-fit: contain !important; /* Ensure proper scaling */
   margin-right: 20px; /* Add spacing between logo and links */
+  margin-top: 10px; /* Move the logo down slightly */
   flex-shrink: 0; /* Prevent shrinking in flexbox */
   flex-grow: 0; /* Prevent growing in flexbox */
 }
