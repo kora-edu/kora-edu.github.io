@@ -338,31 +338,48 @@ blockquote {
 /* Main content */
 .fixed {
   position: fixed;
-  width: 100%; }
-  @media (min-width: 940px) {
-    .fixed {
-      position: static; } }
+  width: 100%;
+}
+@media (min-width: 940px) {
+  .fixed {
+    position: static;
+  }
+}
 
 #container {
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 #header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
-  text-align: center;
-  margin-bottom: 3em;
-  height: 5em;
-  position: relative; }
-  #header a {
-    text-decoration: none;
-    display: inline-block; }
-  #header div {
-    margin: 0 auto; }
-  #header h1 {
-    font-size: 2em;
-    padding-bottom: 0; }
-    #header h1 span {
-      color: rgba(0, 0, 0, 0.6);
-      font-weight: 300; }
+  display: flex; /* Flexbox layout for proper alignment */
+  align-items: center; /* Vertically align logo and links */
+  justify-content: space-between; /* Space out logo and navigation links */
+  padding: 10px 20px; /* Add internal spacing */
+  background-color: #ffffff; /* Consistent background */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14); /* Subtle border */
+  height: auto; /* Allow dynamic height based on content */
+  position: relative; /* Maintain positioning */
+  text-align: left; /* Prevent center alignment of children */
+}
+
+#header a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+#header div {
+  margin: 0;
+}
+
+#header h1 {
+  font-size: 2em;
+  padding-bottom: 0;
+}
+
+#header h1 span {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
 
 /* Posts */
 #posts li {
