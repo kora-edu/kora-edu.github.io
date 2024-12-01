@@ -45,7 +45,7 @@
 #nav-links {
   display: flex; /* Arrange links horizontally */
   align-items: center; /* Align links vertically */
-  gap: 15px; /* Add consistent spacing between navigation links */
+  gap: 25px; /* Add consistent spacing between navigation links */
 
   a {
     text-decoration: none; /* Remove underline from links */
@@ -74,7 +74,7 @@
   }
 
   .header-logo {
-    margin-bottom: 0px; /* Add spacing below the logo */
+    margin-bottom: 10px; /* Add spacing below the logo */
     height: 40px; /* Reduce logo height for smaller screens */
   }
 }
