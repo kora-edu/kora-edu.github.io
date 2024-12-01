@@ -46,12 +46,14 @@
   display: flex; /* Arrange links horizontally */
   align-items: center; /* Align links vertically */
   gap: 15px; /* Add consistent spacing between navigation links */
+  margin-top: auto; /* Ensure links align with logo's baseline */
 
   a {
     text-decoration: none; /* Remove underline from links */
     color: $text-color; /* Default color for links */
     font-size: 16px; /* Adjust font size */
     font-weight: 500; /* Slightly bold for readability */
+    line-height: 1; /* Ensure consistent line height with the logo */
 
     &:hover {
       color: lighten($text-color, 10%); /* Change color on hover */
