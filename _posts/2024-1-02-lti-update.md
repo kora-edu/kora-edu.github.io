@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building an AI-Powered LTI Plugin for Canvas: A Modern EdTech Solution"
-date: 2024-01-15
+date: 2024-11-2
 categories: edtech development
 ---
 **Deploying an LTI Tool for Canvas Using Docker**  
