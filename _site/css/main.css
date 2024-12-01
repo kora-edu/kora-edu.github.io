@@ -419,6 +419,65 @@ code {
 
   /* Adjust the header image and text alignment -------------------------------- KORA LOGO */
 
+.header-logo {
+  height: 50px; /* Constrain logo height */
+  width: auto; /* Maintain aspect ratio */
+  max-width: none; /* Override global img max-width */
+  display: inline-block; /* Prevent block-level behavior */
+  object-fit: contain; /* Ensure proper scaling */
+  margin-right: 20px; /* Add spacing between logo and navigation links */
+  flex-shrink: 0; /* Prevent shrinking in flexbox */
+  flex-grow: 0; /* Prevent growing in flexbox */
+}
+
+/* Header Container Adjustments */
+#header {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically align logo and links */
+  justify-content: space-between; /* Space out logo and navigation links */
+  padding: 10px 20px; /* Add spacing inside the header */
+  background-color: #ffffff; /* Keeps the background clean and consistent */
+  border-bottom: 1px solid #eaeaea; /* Optional subtle border for separation */
+}
+
+/* Navigation Links Styling */
+#nav-links {
+  display: flex; /* Arrange links horizontally */
+  align-items: center; /* Align links vertically */
+  gap: 15px; /* Add consistent spacing between navigation links */
+}
+
+#nav-links a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Default color for links */
+  font-size: 16px; /* Adjust font size */
+  font-weight: 500; /* Slightly bold for readability */
+}
+
+#nav-links a:hover {
+  color: #007bff; /* Change color on hover */
+  text-decoration: underline; /* Optional underline effect on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column; /* Stack the logo and links vertically */
+    align-items: flex-start; /* Align items to the start of the container */
+  }
+
+  #nav-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px; /* Adjust spacing for vertical links */
+    margin-top: 10px; /* Add spacing above navigation links */
+  }
+
+  .header-logo {
+    margin-bottom: 10px; /* Add spacing below the logo */
+    height: 40px; /* Reduce logo height for smaller screens */
+  }
+}
+
 /* Set the vertical rhythm (and padding-left) for lists inside post content */
 .content ul, .content ol {
   line-height: 1.5em;
