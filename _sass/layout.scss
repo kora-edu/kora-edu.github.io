@@ -31,7 +31,7 @@
 
 /* Logo Styling */
 #header .header-logo {
-  height:50px !important; /* Constrain logo height */
+  height:40px !important; /* Constrain logo height */
   width: auto !important; /* Maintain aspect ratio */
   max-width: none !important; /* Override global img max-width */
   display: inline-block !important; /* Prevent block-level behavior */
@@ -50,8 +50,8 @@
   a {
     text-decoration: none; /* Remove underline from links */
     color: $text-color; /* Default color for links */
-    font-size: 22px; /* Adjust font size */
-    font-weight: 500; /* Slightly bold for readability */
+    font-size: 20px; /* Adjust font size */
+    font-weight: 250; /* Slightly bold for readability */
 
     &:hover {
       color: lighten($text-color, 10%); /* Change color on hover */
