@@ -1,11 +1,11 @@
 ---
 layout: post  
-title: "Weekly Update 1"  
+title: "Weekly Update #1"  
 date: 2024-12-5  
 categories: weeklyupdate  
 ---
 
-### Weekly Update: 
+### Weekly Update: Demos!
 
 Here’s we accomplished this week:
 
