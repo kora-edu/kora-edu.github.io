@@ -1,13 +1,13 @@
 ---
 layout: post  
-title: "Building an AI-Powered LTI Plugin for Canvas: A Modern EdTech Solution"  
+title: "Weekly Update 1"  
 date: 2024-12-5  
 categories: weeklyupdate  
 ---
 
-### Weekly Update 1: Progress and Milestones
+### Weekly Update: 
 
-Here’s what the KORA team accomplished this week:
+Here’s we accomplished this week:
 
 ---
 
