@@ -31,22 +31,27 @@ gantt
     axisFormat  %b %d
 
     section Milestone 1
-    Portal setup                :done,   m1, 2024-11-05, 10d
+    Initial Portal Setup         :done,   m1, 2024-11-05, 10d
 
     section Milestone 2
-    LTI framework               :done,   m2, after m1, 10d
+    Core LTI Framework Completed :done,   m2, after m1, 10d
 
     section Milestone 3
-    Testing & API integration   :active, m3, after m2, 10d
+    Backend Testing & API Integration :active, m3, after m2, 15d
 
     section Milestone 4
-    Feedback system setup       :active, m4, after m3, 10d
+    Feedback System Development  :active, m4, after m3, 20d
 
-    section Prototype Development
-    Complete integration          :active, dev, after m4, 15d
+    section Prototype Refinement
+    Frontend Integration & Iteration :active, dev, after m4, 20d
 
-    section User Testing
-    Final MVP phase                 :active, test, after dev, 10d
+    section User Testing & Feedback
+    Initial User Testing         :test,   after dev, 2024-01-25, 20d
+    Collect & Implement Feedback :active, feedback, after test, 15d
+
+    section Deployment Preparation
+    Final System Testing         :prepare, after feedback, 2024-02-15, 5d
+    Deployment & Rollout         :rollout, after prepare, 2024-02-20, 5d
 </div>
 
 <!-- Section Break -->
@@ -66,7 +71,7 @@ gantt
 <hr>
 
 <!-- Featured Post -->
-<h2>Latest Post (All posts avaiable under blog posts tab)</h2>
+<h2>Latest Post <span style="font-size: smaller; color: grey;">(All posts available under blog posts tab)</span></h2>
 <ul id="posts">
   {% for post in site.posts %}
     {% if post.tags contains "featured" %}
