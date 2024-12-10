@@ -53,6 +53,52 @@ layout: default
   Rollout        :active, deploy, after test2, 5d
 </div>
 
+<div class="mermaid">
+  graph TD
+      A1[November 5th] --> A2[Milestone 1]
+      A2 --> B1[November 18th]
+      B1 --> B2[Milestone 2]
+      B2 --> C1[December 12th]
+      C1 --> C2[Milestone 3]
+      C2 --> D1[December 31st]
+      D1 --> D2[Milestone 4]
+      D2 --> E1[January 15th]
+      E1 --> F1[20th February 2025 - User Testing]
+
+      A1 -->|Frontend| A3[Marking Portal]
+      A1 -->|Frontend| A4[Question Generation Portal]
+      A1 -->|Backend| A5[Setup ENV and GPU Renting]
+      A1 -->|Backend| A6[First Fine-tune to Gather Inference Data]
+
+      B1 -->|Frontend| B3[LTI Plugin Framework for Canvas and Moodle]
+      B1 -->|Backend| B4[Second Fine-tune using JBDatas]
+      B1 -->|Backend| B5[Text-based Questions into Exam Paper Format]
+
+      C1 -->|Frontend| C3[tryKORA Frontend for User Testing]
+      C1 -->|Frontend| C4[Decide on tryKORA Domain]
+      C1 -->|Frontend| C5[Define API Endpoints]
+      C1 -->|Frontend| C6[Setup API Integration]
+      C1 -->|Backend| C7[Question Generation from Fine-tuned Model]
+      C1 -->|Backend| C8[Llama Factory for Testing]
+      C1 -->|Backend| C9[Generate Questions into Exam Paper with LaTeX]
+
+      D1 -->|Backend| D3[API and Data Storage for Feedback Management]
+      D1 -->|Backend| D4[Design Database Schema]
+      D1 -->|Backend| D5[Set Up Firebase for Data Storage]
+      D1 -->|Backend| D6[Integrate Authentication with OAuth]
+      D1 -->|Backend| D7[Connect API to Frontend]
+
+      E1 -->|Frontend| E3[Login Page]
+      E1 -->|Frontend| E4[Marking Page]
+      E1 -->|Frontend| E5[Question Generation Page]
+      E1 -->|Frontend| E6[Plugin for Moodle]
+      E1 -->|Frontend| E7[Plugin for Canvas]
+      E1 -->|Backend| E8[Fine-tuned Model]
+      E1 -->|Backend| E9[Traditional Exam Paper Generation using LaTeX]
+      E1 -->|Backend| E10[Programming Problem Generation]
+      E1 -->|Backend| E11[Marking]
+</div>
+
 <!-- Section Break -->
 <hr>
 
