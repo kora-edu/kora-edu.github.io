@@ -1,7 +1,7 @@
 ---
 layout: page
 title: blog posts
-description: Learnskfnoinf more about KORA and our development process.
+description: Learn more about KORA and our development process.
 ---
 
 ## Blog Posts
