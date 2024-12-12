@@ -5,7 +5,7 @@ description: Learnskfnoinf more about KORA and our development process.
 ---
 
 ## Blog Posts
-Below, you'll find a complete list of blog posts about our development progress:
+Below123456, you'll find a complete list of blog posts about our development progress:
 
 <ul>
   {% for post in site.posts %}
