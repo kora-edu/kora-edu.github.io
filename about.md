@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Us
+title: about us
 description: Learn more about KORA, our mission, and our development process.
 ---
 
