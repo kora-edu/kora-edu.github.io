@@ -34,6 +34,7 @@ This is a more specific dive into what we have been up to since *Milestone 3*. \
 	- Fine-tuning on a small given dataset is on the surface a similar behaviour to a large RAG approach (this is being tested)
 - Improved Q2L pipeline to work near full-auto for later implementing
 	- Merging cleaning & compilation processes; now leveraging a document-familiar model to handle parsing, checkups etc.
+	
 - Adding localisation of latex templates to specific uni's is planned & possible [VUW example](https://ecs.wgtn.ac.nz/Main/ProjectTemplates#Exam_Templates)
 ---
 
