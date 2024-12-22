@@ -1,15 +1,14 @@
 ---
 tags: [featured]
-title: "Progress Recap" 
+title: "Weekly Update 2" 
 description: Progress update on the ongoing development of KORA Edu.
-header: "Blog post, Recap"
+header: "Weekly Update: ML and Data Processing"
 ---
 
 # December 21st: Recap
 
 This is a more specific dive into what we have been up to since *Milestone 3*. \
  For more specific changes, feel free to visit our [Github](https://github.com/kora-edu). Although note; much back-end work is local & research/testing based.
-
 
 ---
 
