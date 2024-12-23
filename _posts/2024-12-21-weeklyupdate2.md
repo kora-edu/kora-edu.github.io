@@ -1,6 +1,6 @@
 ---
 tags: [featured]
-title: "Weekly Update 2" 
+title: "Weekly Update #2" 
 description: Progress update on the ongoing development of KORA Edu.
 header: "Weekly Update: ML and Data Processing"
 ---
