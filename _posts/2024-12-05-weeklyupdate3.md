@@ -33,15 +33,21 @@ This achievement provides a fully functional, in-browser IDE for programming pra
 
 ---
 
-#### **3. Data Processing and Optimization**  
-*Joel* successfully:  
-- ...
+#### **3. Research and Development on RAG**  
+*Joel* made significant progress on Retrieval-Augmented Generation (RAG):  
+- Set up a **local development environment for RAG** on structured data using **Ollama** and **R2R-lite**, allowing experimentation with different models and configurations.  
+- Researched modern RAG methods to understand **which algorithms suit varying levels of needs**.  
+- Determined that a hybrid approach combining **an agent with reranking, HYDE, and RAG-fusion** is suitable for current goals.  
+- Finalized the RAG implementation plan using:  
+  - **vLLM** for R2R-based completions.  
+  - **Qwen model** for temporary completions.  
+  - **mxbai-embed-large** as the embedding model.  
+  - **bge-reranker-v2-m3** as the reranker.  
 
 ---
 
 #### **4. Pipelines and Documentation**  
-*Lev* successfully:  
-- ...
+*Lev*:
 
 ---
 
