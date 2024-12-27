@@ -1,7 +1,7 @@
 ---
 tags: []
 layout: post  
-title: "Weekly Update #4"  
+title: "Weekly Update #3"  
 date: 2024-12-27  
 categories: weeklyupdate  
 ---
@@ -27,7 +27,7 @@ Here’s what we accomplished this week:
 
 Here’s what it looks like in action:  
 
-![IDE Screenshot](C:\Users\OKH20\OneDrive - University of Canterbury\Projects\KORA\Website\kora-edu.github.io\img\ide.png)  
+![IDE Screenshot](/img/ide.png) 
 
 This achievement provides a fully functional, in-browser IDE for programming practice and evaluation.  
 
@@ -46,8 +46,11 @@ This achievement provides a fully functional, in-browser IDE for programming pra
 
 ---
 
-#### **4. Pipelines and Documentation**  
-*Lev*:
+#### **4. TAG System Prototyping**  
+*Lev* started exploring the **TAG (Topic Annotation and Grouping)** system for integration with the RAG implementation:  
+- Began prototyping a **TAG system** for future use.  
+- Researched **current state-of-the-art TAG pipelines** to inform design decisions.  
+- Started designing a TAG framework to align with the **current and planned RAG implementations**.  
 
 ---
 
