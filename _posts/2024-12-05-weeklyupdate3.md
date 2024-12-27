@@ -34,16 +34,14 @@ This achievement provides a fully functional, in-browser IDE for programming pra
 ---
 
 #### **3. Data Processing and Optimization**  
-*Joel* focused on improving data accessibility and optimization:  
-- Began leveraging **Retrieval-Augmented Generation (RAG)** for accessing the most relevant data efficiently.  
-- Streamlined data pipelines for faster and more accurate results.  
+*Joel* successfully:  
+- ...
 
 ---
 
 #### **4. Pipelines and Documentation**  
 *Lev* successfully:  
-- Set up robust **pipelines** to streamline project workflows.  
-- Improved and expanded **documentation**, ensuring clarity and ease of use for all contributors.  
+- ...
 
 ---
 
