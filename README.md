@@ -1,4 +1,3 @@
-```markdown
 # About Us - Kora Educational AI
 
 Welcome to the **About Us** page for Kora, your partner in educational AI. This repository contains the Jekyll template for our "About Us" frontpage, designed to showcase our mission, team, and the innovative AI solutions we provide for the education sector.
