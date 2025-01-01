@@ -1,131 +1,114 @@
-## About
-Monochrome is a minimal, responsive, ready to use Jekyll theme for blogging. [Demo](https://dyutibarma.github.io/monochrome/)
-(Built on top of Emerald Jekyll theme)
+```markdown
+# About Us - Kora Educational AI
 
-## Features
+Welcome to the **About Us** page for Kora, your partner in educational AI. This repository contains the Jekyll template for our "About Us" frontpage, designed to showcase our mission, team, and the innovative AI solutions we provide for the education sector.
 
-- Completely responsive and mobile first
-- Clean SEO friendly URLs, auto-generated from post title (no messy dates in the url)
-- SEO title/description integration
-- Sitemap ready
-- Pagination support
-- Mobile friendly navigation menu
-- Easy customization for header, footer, navigation links, colors, favicon etc
-- Default Monochrome Color Palette - black, white, greys
-- About page
-- 404 page
-- ..and a lot more
+## Table of Contents
 
-## Install/Setup Jekyll
+- [Overview](#overview)
+- [Build Instructions](#build-instructions)
+- [Committing Changes](#committing-changes)
+- [Contributing](#contributing)
 
-(Skip if you already have Jekyll 2.2)
+## Overview
 
-1. Make sure Ruby 2.2 is installed 
-```
-sudo apt-get install ruby2.2 (sudo apt-get install ruby-full)
-sudo apt-get install ruby2.2-dev
-```
-2. Install bundle: `sudo gem install bundler`
-3. Install jekyll: `sudo gem install jekyll`
+Kora is dedicated to transforming education through cutting-edge AI technologies. Our solutions empower educators, enhance student learning experiences, and streamline administrative processes. This Jekyll template is designed to provide a clean, professional, and informative frontpage for our "About Us" section.
 
-### Resources
+## Build Instructions
 
-- We found the jekyll tutorials on youtube very quick and useful to get started
-- [Jekyll documentation](http://jekyllrb.com)   
+To build and run this Jekyll site locally, follow these steps:
 
+### Prerequisites
 
-## Install Monochrome dependencies
+- **Ruby**: Ensure you have Ruby installed. You can check by running `ruby -v` in your terminal.
+- **Bundler**: Install Bundler by running `gem install bundler`.
 
-```
-sudo gem install jekyll-paginate
-sudo gem install jekyll-sitemap
+### Steps
 
-```
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-repo/about-us.git
+   cd about-us
+   ```
 
-## Get Started with Monochrome
+2. **Install Dependencies**:
+   ```bash
+   bundle install
+   ```
 
-### Option 1 
+3. **Run the Jekyll Server**:
+   ```bash
+   bundle exec jekyll serve
+   ```
 
-- Fork this repository
-- Clone the forked repository to your local machine to make changes: git clone https://github.com/your-github-username/monochrome.git)
-- (Optional) Change the 'baseurl' value in the 'config.yml' file, from '/blog' to your preferred directory/project name (example '/xyz' or '/' to install in root)
-- Run 'jekyll serve' and open browser to 'localhost:4000/blog/' to see your changes
-- (Optional) Host with github pages
+4. **View the Site**:
+   Open your browser and navigate to `http://localhost:4000` to view the site.
 
-Note: If you fork the repository, your version of the repository will not be searchable. If you want searchability, we suggest you use the next option.
+## Committing Changes
 
+When making changes to the site, follow these guidelines for committing:
 
-### Option 2
+1. **Create a New Branch**:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-- Simply download the .zip folder from the repository github page
-- Extract the contents from the .zip folder into your local folder
-- cd into monochrome/
-- Run 'jekyll serve' and open browser to 'localhost:4000/blog/' to see your changes
-- Create a repository in github and push the files
-- (Optional) Host with github pages
+2. **Make Your Changes**:
+   Edit the necessary files (e.g., `index.md`, `_config.yml`, CSS files).
 
-## Write a Post
+3. **Stage Your Changes**:
+   ```bash
+   git add .
+   ```
 
-- cd into  ``_posts/``
-- create new file with format yyyy-mm-dd-title-of-post.md
-- add title/description (refer any of the test posts)
-- add markdown and save
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Describe your changes here"
+   ```
 
+5. **Push Your Changes**:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
 
-## Customization Options
+6. **Create a Pull Request**:
+   Go to the repository on GitHub and create a pull request from your branch to the `main` branch. Provide a detailed description of your changes.
 
-You can customize this layout using instructions below. 
+## Contributing
 
-### Header/Footer/Navigation
+We welcome contributions from the community! If you have ideas for improving our "About Us" page or want to add new features, please follow these steps:
 
-Set a custom header tag by setting the related option in the ``_config.yml`` file to "true". Then insert your custom code into the ``header-custom.html`` file.
-In the same way, you can customize the footer of the navigation menu, by setting to "true" the related option and put your code into the ``nav-footer-custom.html`` file.
-Moreover select a reverse option that allows to move the navigation menu to the left side, by setting it to "true".
+1. **Fork the Repository**:
+   Click the "Fork" button on the top right of the repository page.
 
-### Colors
+2. **Clone Your Fork**:
+   ```bash
+   git clone https://github.com/your-username/about-us.git
+   cd about-us
+   ```
 
-The basic colors are set into the ``base.scss`` file:
-- $background-color: used for background and links in the navigation menu
-- $text-color: used for text and title in posts and pages 
-- $text-light-color: used for text lighter than text-color
-- $text-dark-color: used for text darker than text-color
+3. **Create a New Branch**:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-To customize the colors, just set the values in HEX, RGB (or RGBa) or any other format accepted by CSS.
+4. **Make and Commit Your Changes**:
+   Follow the same steps as in the [Committing Changes](#committing-changes) section.
 
-### Navigation menu
-
-The links inside the navigation menu are autogenerated from pages having the layout set to ``page``.
-You can set custom links, by putting in the ``<a>`` tag into the ``link.html`` file.
-
-### Branch
-There are two branches: 
-- ``master``: is for development.
-- ``gh-pages``: is only for demo site.  
-
-### Baseurl
-
-You can change the 'baseurl' value in the 'config.yml' file, from '/monochrome' to your preferred directory/project name (example '/xyz' or '/' to install in root)
-
-### Typography
-
-To maintain the vertical rhythm, it has been applied a **Typographic scale** as a modular scale, with a baseline set to 24px. To maintain this rhythm you need to insert elements like image, video or other contents with a 24px (or multiple) height as refer.
-
-## Resources
-
-- We found the jekyll tutorials on youtube very quick and useful to get started
-- [Jekyll documentation](http://jekyllrb.com)   
-
-## Todo
-
-- Google Analytics integration
-- Footer to stick to bottom even when content is less
-
-## Author
-
-### TheReviewIndex
-
-- Dyuti Barma
-- Web site: [Review Aggregation and Summary Site for India - TheReviewIndex.com](https://thereviewindex.com)
+5. **Submit a Pull Request**:
+   Go to your forked repository on GitHub and create a pull request to the `main` branch of the original repository.
 
 ## License
-Released under [MIT License](license.md).
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or inquiries, please contact our support team.
+
+---
+
+Thank you for visiting our "About Us" page repository. We look forward to your contributions and feedback as we continue to innovate in the field of educational AI.
+```
+
+This README provides clear instructions for building the Jekyll site, committing changes, and contributing to the project. It also includes a brief overview of Kora's mission and contact information.
