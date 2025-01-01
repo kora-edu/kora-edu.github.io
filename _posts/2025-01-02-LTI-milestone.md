@@ -1,3 +1,10 @@
+---
+tags: []
+title: "LTI Integration Complete!"
+description: Progress update on the ongoing development of KORA Edu LTI Plugin.
+header: "Major LTI milestone"
+---
+
 # Kora Announces Full LTI 1.3 Plugin Support
 
 We are excited to announce that Kora now fully supports **LTI 1.3**, the latest standard for Learning Tools Interoperability. This update ensures seamless integration with a wide range of Learning Management Systems (LMS) and provides enhanced security, flexibility, and functionality for educators and learners.
