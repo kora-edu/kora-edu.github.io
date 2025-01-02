@@ -1,8 +1,9 @@
 ---
-tags: []
+tags: [featured]
 title: "LTI Integration Complete!"
 description: Progress update on the ongoing development of KORA Edu LTI Plugin.
 header: "Major LTI milestone"
+date: 2025-01-02
 ---
 
 # Kora Announces Full LTI 1.3 Plugin Support
