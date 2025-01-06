@@ -21,9 +21,9 @@ At KORA, our mission is to revolutionize education by providing tools that empow
 
 ### Our Team
 
- Take a look at our team members:
+Take a look at our team members:
 
-<iframe src="{{ site.baseurl }}/team.html" width="100%" height="800px" scrolling="no" style="border:none;"></iframe>
+{% include team.html %}
 
 ### Our Journey
 
