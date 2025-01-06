@@ -19,6 +19,12 @@ At KORA, our mission is to revolutionize education by providing tools that empow
 - **Continuous Improvement**:  
   Our team is constantly researching and refining our tools to provide the best possible experience.
 
+### Our Team
+
+Take a look at our team members:
+
+<iframe src="{{ site.baseurl }}/team.html" width="100%" height ="400px" scrolling="no" style="border:none;"></iframe>
+
 ### Our Journey
 
 KORA began as a small project aimed at simplifying the exam preparation process. Over time, we’ve grown into a platform designed to meet the evolving needs of both students and educators.
