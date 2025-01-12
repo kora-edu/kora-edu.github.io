@@ -2,7 +2,7 @@
 tags: [featured]
 layout: post  
 title: "Weekly Update #4"  
-date: 2025-01-12  
+date: 2025-01-14  
 categories: weeklyupdate  
 ---
 
