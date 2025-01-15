@@ -45,8 +45,8 @@ The platform now supports:
 
 ---
 
-#### **5. tryKORA Full Supabase Integration**  
-The **tryKORA platform** is now fully integrated with **Supabase**, featuring:  
+#### **5. kora.ac Full Supabase Integration**  
+The **kora.ac platform** is now fully integrated with **Supabase**, featuring:  
 
 - **Rate Limiting**: Ensuring fair and efficient resource usage.  
 - **Security Enhancements**: Comprehensive protections against potential exploits.  
