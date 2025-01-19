@@ -1,5 +1,5 @@
 ---
-tags: [featured]
+tags: []
 layout: post  
 title: "Weekly Update #4"  
 date: 2025-01-14  
