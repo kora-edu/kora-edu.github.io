@@ -32,13 +32,11 @@ Knowing this, internal ingestion setup & tests prove to support this vision in t
 ---
 
 #### **2. Chat functionality with Agent**  
-<img src="/img/gen_example1.png" width="600" height="400" align="left"> 
 
 A RAG Agent builds upon simple Q/A interactions with internal reasoning that determines the best course to retrieving data for a response. Web-interaction is supported with this function and based on user's input; will be utilised appropriately.
-
+<img src="/img/gen_example1.png" width="600" height="320"> 
 
 KORA will initially implement this with Exam Review sessions as students figuring out questions may converse to reach understanding of certain topics / questions missed. Previous similar examples (with answers optimally) can be used to determine familiar courses of action to answering correctly.
-
 
 ---
 
@@ -65,7 +63,7 @@ KG Graph Communities & Collections enable:
 
 * Hatchet working with workflow
   * Managing current events, admin, debugging/request inspection
-  <img src="/img/hatchet_runs.png" width="471" height="221"> 
+  <img src="/img/hatchet_runs.png" width="700" height="300"> 
 ---
 
 This was an insight into an important feature / whats to come. Stay tuned as we continue pushing toward our next milestones! 
