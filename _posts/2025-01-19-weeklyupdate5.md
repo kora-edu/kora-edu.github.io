@@ -2,11 +2,11 @@
 tags: [featured]
 layout: post  
 title: "RAG integration on horizon"  
-date: 2025-01-14  
+date: 2025-01-19 
 categories: weeklyupdate  
 ---
 
-### Features Update: Key Progress & Enhancements  
+### Features Update: RAG-Enhancing KORA 
 
 Here's the rundown of what RAG technology is, and how KORA will be developing alongside its capabilities:
 
