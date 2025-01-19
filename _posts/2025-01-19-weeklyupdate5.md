@@ -18,7 +18,7 @@ This enables a models base knowledge to be sort of 'improved' within certain def
 
 The general gist is that information such as text, images, documents can be stored in a database that is referenced during test-time for example Q/A, Web-Search, or RAG-Agent (Agentic). There is a calculated similarity within relevant documents that determine which are pulled into context for the base model to use as a part of its answer.
 
-<img src="rag_pipel.png" width="500" height="280"> 
+<img src="/img/rag_pipel.png" width="500" height="280"> 
 
 ---
 
@@ -33,7 +33,7 @@ Knowing this, internal ingestion setup & tests prove to support this vision in t
 #### **2. Chat functionality with Agent**  
 A RAG Agent builds upon simple Q/A interactions with internal reasoning that determines the best course to retrieving data for a response. Web-interaction is supported with this function and based on user's input; will be utilised appropriately.
 
-<img src="gen_example1.png" width="550" height="300"> 
+<img src="/img/gen_example1.png" width="550" height="300"> 
 
 KORA will initially implement this with Exam Review sessions as students figuring out questions may converse to reach understanding of certain topics / questions missed. Previous similar examples (with answers optimally) can be used to determine familiar courses of action to answering correctly.
 
@@ -63,7 +63,8 @@ KG Graph Communities & Collections enable:
 
 * Hatchet working with workflow
   * Managing current events, admin, debugging/request inspection
-  <img src="hatchet_runs.png" width="471" height="221"> 
+  ![dd](/img/hatchet_runs.png)
+  <img src="hatchet_runs.png"> 
 ---
 
 This was an insight into an important feature / whats to come. Stay tuned as we continue pushing toward our next milestones! 
