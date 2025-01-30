@@ -33,4 +33,4 @@ If you'd like to learn more about our development journey, check out our [blog p
 
 ### Contact Us
 
-Have questions or feedback? We’d love to hear from you! Reach out to us at [contact@kora.com](mailto:contact@kora.com).
+Have questions or feedback? We’d love to hear from you! Reach out to us at [contact@kora.com](mailto:support@kora.ac).
