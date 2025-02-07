@@ -1,2 +1,2 @@
-ruby "~> 3.4.1"
-gem "bundler", "~> 2.6.3"
+ruby "~> 3.3.6"
+gem "bundler", "~> 2.5.2"
